@@ -16,23 +16,6 @@ Tech Stack
 - JavaScript
 - HTML & CSS
 
-Project Structure
-frontend/
- ├─ src/
- │   ├─ views/
- │   │   ├─ Login.vue
- │   │   ├─ Register.vue
- │   ├─ services/
- │   │   ├─ apiClient.js
- │   │   └─ statusService.js
- │   ├─ router/
- │   ├─ App.vue
- │   └─ main.js
- ├─ public/
- ├─ vue.config.js
- ├─ package.json
- └─ README.md
-
 Backend Integration
 Backend runs on:
 http://localhost:5000
