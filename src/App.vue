@@ -1,19 +1,18 @@
 <template>
-  <!-- <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav> -->
-  <LoginView />
   <router-view />
 </template>
 
 <script>
-import LoginView from "./views/login.vue";
+// import { getCsrfToken } from "./services/auth";
 export default {
   name: "App",
   data() {
     return {};
   },
-  components: { LoginView },
+  async mounted() {
+    // const res = await getCsrfToken();
+    // console.log("Fetched CSRF Token:", res.csrfToken);
+    // localStorage.setItem("csrfToken", res.csrfToken);
+  },
 };
 </script>
