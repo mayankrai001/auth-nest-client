@@ -31,6 +31,10 @@
 
         <p v-if="error" class="error">{{ error }}</p>
       </form>
+      <p class="signup-link">
+        Don’t have an account?
+        <router-link to="/signup">Sign up</router-link>
+      </p>
     </div>
   </div>
 </template>
@@ -156,5 +160,22 @@ button:disabled {
   color: #dc2626;
   font-size: 14px;
   text-align: center;
+}
+
+.signup-link {
+  margin-top: 18px;
+  text-align: center;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.signup-link a {
+  color: #6366f1;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
 }
 </style>

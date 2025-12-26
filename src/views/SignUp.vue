@@ -117,7 +117,7 @@ button {
   padding: 11px;
   border-radius: 8px;
   border: none;
-  background: #111827;
+  background: #6366f1;
   color: #ffffff;
   font-size: 14px;
   font-weight: 500;

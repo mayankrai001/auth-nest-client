@@ -4,7 +4,8 @@ import LoginView from "../views/login.vue";
 import SignUp from "../views/SignUp.vue";
 
 const routes = [
-  { path: "/", name: "LoginView", component: LoginView },
+  { path: "/", redirect: "/login" },
+  { path: "/login", name: "LoginView", component: LoginView },
   { path: "/signup", name: "SignupView", component: SignUp },
   {
     path: "/dashboard",
@@ -14,7 +15,7 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
+  history: createWebHistory(),
   routes,
 });
 
